@@ -1,0 +1,4 @@
+
+Integer：
+	Integer.parseInt(String)
+	intValue()

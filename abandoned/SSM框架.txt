@@ -1,0 +1,90 @@
+使用Junit单元测试来测试配置
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(location="classpath:bean.xml")
+@Autowired:连接pom.xml文件，向下面的变量注入内容，通过变量数据类型确定注入的数据
+@Test：测试类中的方法都要加上这个注释
+
+
+IAccountService
+	transfer
+
+AccountServiceImpl
+	transfer
+
+1、spring框架的概述以及spring中基于xml的IOC配置
+2、spring中基于注解的IOC和IOC的案例
+3、spring中的aop和基于xml以及注解的aop配置
+4、spring中的JdbcTemplate以及spring事务控制
+
+spring事务控制很重要、有了它，以后项目中的事务控制都可以交由spring来处理
+IoC核心思想：使用资源的双方
+Spring框架其它任何部分想要运行都需要核心容器IoC的支持
+导入Maven依赖
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-context</artifactId>
+	<version>5.0.5.RELEASE</version>
+导入MySQL依赖
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>5.1.7</version>
+
+第一天：
+1、spring的概述
+	spring是什么
+		spring是分层的Java SE/EE应用全栈轻量级开源框架，以IoC和AOP为内核，还能整合众多著名的第三方框架和类库
+	spring的两大核心
+		两大核心是IoC和AOP
+	spring的发展历程和优势
+		1、方便解耦，简化开发，通过IoC容器将对象间的依赖关系交由spring控制
+		2、AOP编程的支持
+		3、声明式事务的支持
+			声明式即通过配置的方式实现事务控制
+		4、方便程序的测试
+			通过整合JUnit方便测试
+		5、方便集成各种优秀框架
+		6、降低Java EE API的使用难度
+	spring体系结构
+2、程序的耦合及解耦
+	曾经案例中的问题
+	工厂模式解耦
+3、IOC概念和spring中的IOC
+	spring中基于xml的IOC环境搭建
+4、依赖注入（Dependency Injection）
+5、作业
+
+三层架构：
+MyBatis是一个解决持久层问题的框架
+SpringMVC是解决表现层的框架
+
+
+
+系统管理员：
+	留言处理
+	报名信息管理
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
